@@ -1,0 +1,13 @@
+services:
+  strands:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - STRANDS_MODEL=${STRANDS_MODEL:-claude-sonnet-4-6}
+      - STRANDS_GITHUB_WRITE=${STRANDS_GITHUB_WRITE:-false}
+      - GITHUB_TOKEN=${GITHUB_TOKEN:-}
+    volumes:
+      # Mount a repo you want to audit at /target and pass repo_root=/target.
+      - ${TARGET_REPO:-./examples/sample_repo}:/target:ro
