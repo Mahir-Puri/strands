@@ -1,0 +1,14 @@
+{
+  "name": "web_app",
+  "repo_dir": "repo",
+  "vulnerabilities": [
+    {"file": "app.py", "category": "sql_injection", "cwe": "CWE-89", "line": 42},
+    {"file": "app.py", "category": "command_injection", "cwe": "CWE-78", "line": 51},
+    {"file": "app.py", "category": "path_traversal", "cwe": "CWE-22", "line": 60},
+    {"file": "app.py", "category": "hardcoded_secret", "cwe": "CWE-798", "line": 20},
+    {"file": "app.py", "category": "weak_hash", "cwe": "CWE-327", "line": 32},
+    {"file": "app.py", "category": "debug_enabled", "cwe": "CWE-489", "line": 69},
+    {"file": "db.py", "category": "sql_injection", "cwe": "CWE-89", "line": 25},
+    {"file": "db.py", "category": "hardcoded_secret", "cwe": "CWE-798", "line": 8}
+  ]
+}
