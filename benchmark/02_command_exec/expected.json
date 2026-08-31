@@ -1,0 +1,9 @@
+{
+  "name": "command_exec",
+  "repo_dir": "repo",
+  "vulnerabilities": [
+    {"file": "runner.py", "category": "command_injection", "cwe": "CWE-78", "line": 9},
+    {"file": "runner.py", "category": "deserialization", "cwe": "CWE-502", "line": 14},
+    {"file": "runner.py", "category": "command_injection", "cwe": "CWE-78", "line": 19}
+  ]
+}
